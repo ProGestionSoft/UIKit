@@ -1,9 +1,9 @@
 {
   "name": "@progestionsoft/uikit",
-  "keywords": ["progestionsofts", "PGS", "ui", "vue", "errorpage"],
+  "keywords": ["progestionsoft", "PGS", "ui", "vue", "errorpage"],
   "author": "Pro Gestion Soft",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "files": [
     "components",
@@ -13,7 +13,14 @@
   "exports": {
     ".": "./index.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "publish:npm": "npm publish --registry=https://registry.npmjs.org/",
+    "publish:gh": "npm publish --registry=https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "vue": "^3.5.13"
-  }  
+  }
 }
